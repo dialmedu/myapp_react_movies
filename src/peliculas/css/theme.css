@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'GillSansMt';
+  src: url('./fonts/gill-sans-mt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	font-family: 'GillSansMt','Helvetica', sans-serif;
+}
+
+button {
+	border: none;
+    background-color: transparent;
+}
+
+.dm_theme_movie
+{
+	background-color: var(--body-bg-color);
+
+	background: radial-gradient(ellipse at center, #5f727d 0%, #1e2830 50%, #1e2830 100%);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(95,114,125,1) 0%, rgba(30,40,48,1) 50%, rgba(30,40,48,1) 100%);
+	background-size: 200% 300%;
+	background-position-y: 50%;
+	min-width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.dm_theme_movie.dm_layout_panel
+{
+
+    --dm_layout_panel__menu-height: 70px; 
+    --dm_layout_panel__side-width: 20%;
+
+    --body-bg-color: #1e2830;
+}
+
+.dm_theme_movie .menu
+{
+	--menu-heigh: 70px;
+	--menu__btn_search-background-color: #1c8d71;
+	--menu__btn_search-color: white;
+	--menu__btn_search-height-1200px: 50px;
+	--menu__btn_search-width-1200px: 50px;
+	--menu__title-color: white;
+}
+
+.dm_theme_movie .menu_side
+{
+	--menu__link-height-1200px: 40px;
+}
+
+.dm_theme_movie .pelicula
+{
+	--pelicula-margin-top: 35px;
+	--pelicula__puntaje-background-color: #fa8f00;
+	--pelicula__puntaje-height: 35px;
+
+	margin-top: var(--pelicula-margin-top);
+}
+
+
+
+
+#listapeliculas {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+@media (min-width: 1200px){
+	
+	.menu__link {
+		font-size: medium;
+		height: var(--menu__link-height-1200px);
+		line-height: var(--menu__link-height-1200px);
+	}
+
+	.pelicula__title {
+		font-size: medium;
+		max-width: 80%;
+	}
+
+	.pelicula__puntaje {
+		height: var(--pelicula__puntaje-height);
+		width: var(--pelicula__puntaje-height);
+		line-height: var(--pelicula__puntaje-height);
+		border-radius: var(--pelicula__puntaje-height);
+	}	
+
+	.categoria__name {
+		font-size: larger;
+	}
+
+	.user__nick {
+		padding: 0 40%;
+		transform: scale(1.4);
+	}
+
+	.user_name {
+		font-size: larger;
+	}
+
+	.btn.menu__btn_search {
+		height: var(--menu__btn_search-height-1200px);
+		width: var(--menu__btn_search-width-1200px);
+		line-height: var(--menu__btn_search-height-1200px);
+		border-radius: var(--menu__btn_search-width-1200px);
+		font-size: 15px;
+	}
+}
