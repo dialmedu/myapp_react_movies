@@ -59,7 +59,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 ### Advanced Configuration
 
-EN LA 62 AGRECO ALGO PARA DEVELOP
+EN LA 62 AGRECO ALGO PARA NUEVO ESTILO
 
 ### Deployment
 
